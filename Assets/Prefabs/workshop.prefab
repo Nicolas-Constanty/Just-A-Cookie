@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &131612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 491256}
+  - 212: {fileID: 21234280}
+  - 114: {fileID: 11467470}
+  - 60: {fileID: 6040932}
+  m_Layer: 0
+  m_Name: workshop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491256
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.4300003, y: -1.49000001, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!60 &6040932
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131612}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 1.86306381, y: 1.00299025}
+      - {x: -1.02770615, y: .981056988}
+      - {x: -1.02595901, y: 1.10846055}
+      - {x: -1.37865067, y: 1.10525048}
+      - {x: -1.37714767, y: .994549215}
+      - {x: -1.61363983, y: .986167073}
+      - {x: -1.61289215, y: 1.06336105}
+      - {x: -1.83000183, y: 1.06884801}
+      - {x: -1.83443832, y: .987259984}
+      - {x: -2.09085464, y: .985608459}
+      - {x: -2.23618698, y: .800926208}
+      - {x: -2.25, y: -1.11000001}
+      - {x: 2.12130356, y: -1.11000001}
+      - {x: 2.10770035, y: -.517298937}
+      - {x: 2.25, y: -.491655588}
+      - {x: 2.21907425, y: .517082334}
+      - {x: 2.10401917, y: .800149322}
+--- !u!114 &11467470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fcb5d426cc9a04b8cb439014d7923f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valid: {fileID: 21300000, guid: 96f3bc9cae3068a49a641db6a798ca3c, type: 3}
+  erreur: {fileID: 21300000, guid: 6041ce2c7078ae44c9fa8d077be42285, type: 3}
+  craft:
+  - index: 05000000090000000e000000
+    death_anim: 2
+    weapon: {fileID: 142392, guid: 973de9d58c5fc2f4ab9311b4098e4bdf, type: 2}
+    distance: 6
+  - index: 020000000c0000000e000000
+    death_anim: 3
+    weapon: {fileID: 174520, guid: e5445287e2d7cde4e801f446fa714dcb, type: 2}
+    distance: 6
+  - index: 060000000f00000010000000
+    death_anim: 1
+    weapon: {fileID: 138444, guid: 5db68c45b31b4b147b4a4e3a5f59ea8d, type: 2}
+    distance: 6
+  - index: 04000000050000000d000000
+    death_anim: 2
+    weapon: {fileID: 169688, guid: c6a8c86f13c617e4aac0ddf51491d1bc, type: 2}
+    distance: 6
+  - index: 090000000e0000000f000000
+    death_anim: 2
+    weapon: {fileID: 121898, guid: a651994cefa53884297c7fcc168a93ce, type: 2}
+    distance: 10
+  - index: 070000000a00000010000000
+    death_anim: 1
+    weapon: {fileID: 155032, guid: f60011045924c864fba6a91f584b1f72, type: 2}
+    distance: 6
+  - index: 040000000a0000000b000000
+    death_anim: 1
+    weapon: {fileID: 171504, guid: c1e45e8013144e54c9e34126af4c30a2, type: 2}
+    distance: 6
+  - index: 02000000030000000c000000
+    death_anim: 3
+    weapon: {fileID: 149448, guid: 637a77fb4ff14b242a762f7d2b7029bf, type: 2}
+    distance: 6
+  flash_color: {r: .191176474, g: 1, b: .330628842, a: 1}
+  click: 0
+  last_anim: 0
+  s_distance: 0
+--- !u!212 &21234280
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131612}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: be274650f0fc8464aba8a9ca3d2c171b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 131612}
+  m_IsPrefabParent: 1
